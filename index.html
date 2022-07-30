@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food App</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons.flaticon.com/png/512/737/premium/737967.png?token=exp=1644646753~hmac=4d2a230531f3a7645ffc265bf73a93a0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1>foodie pointer</h1>
+      <p>Discover the best food and kingman</p>
+      <div class="flex">
+        <div id="inputbar">
+          <input
+            type="text"
+            oninput="debounce(main,1000)"
+            id="query"
+            placeholder="search here by recipe name"
+          />
+          <div id="movies"></div>
+        </div>
+        <button id="dayrecepie" onclick="dayrecepie()">
+          Get recipe of the day
+        </button>
+        <button id="latest" onclick="search1()">Latest recipes</button>
+      </div>
+    </div>
+    <div id="print"></div>
+    <div id="recepie"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
